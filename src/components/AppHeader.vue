@@ -29,7 +29,7 @@ export default {
       ]
     }
   },
-  
+
 }
 
 </script>
@@ -41,8 +41,7 @@ export default {
     </div>
     <nav>
       <ul>
-        <li 
-        v-for="link in links">
+        <li v-for="link in links">
           <a href="">{{ link.text }}</a>
         </li>
       </ul>
@@ -51,32 +50,41 @@ export default {
   </div>
 </template>
 
-<style scoped>
-.container{
+<style lang="scss" scoped>
+@use "../styles/partials/variables" as *;
+
+.container {
   justify-content: space-between;
-}
-.header-logo{
-  height: 100px;
-  padding: 15px 0;
-}
-a{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  color: black;
-}
-ul{
-  display: flex;
-  height: 100%;
-  gap: 10px;
-  margin-right: 30px;
-}
-a{
-height: 75px;
-}
-li{
-  font-size: 10px;
-  font-weight: 700;
+
+  .header-logo {
+    height: 100px;
+    padding: 15px 0;
+
+    a {
+      height: 75px;
+    }
+
+  }
+
+  ul {
+    display: flex;
+    height: 100%;
+    gap: 10px;
+    margin-right: 30px;
+
+    li {
+      font-size: 10px;
+      font-weight: 700;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        color:$color-nav-link;
+      }
+
+    }
+  }
 }
 </style>

@@ -180,107 +180,117 @@ export default {
     </footer>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .footer-main {
     min-height: 250px;
     background-image: url('../assets/img/footer-bg.jpg');
     background-size: cover;
+
+    .container {
+        background-image: url('../assets/img/dc-logo-bg.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 380px;
+
+        nav {
+            color: #ffffff;
+            display: flex;
+
+            .nav-col {
+                min-width: 120px;
+                padding: 10px;
+                margin: 10px;
+
+                h2 {
+                    font-size: 13px;
+                    margin: 10px 0;
+                }
+
+                li {
+                    padding: 3px;
+                    font-size: 12px;
+                    color: #687980;
+
+                    a {
+                        color: #687980;
+                    }
+                }
+
+                li:hover {
+                    color: #cecece;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
 }
 
-.container {
-    background-image: url('../assets/img/dc-logo-bg.png');
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 380px;
-}
 
-nav {
-    color: #ffffff;
-    display: flex;
-}
 
-.nav-col {
-    min-width: 120px;
-    padding: 10px;
-    margin: 10px;
-}
 
-h2 {
-    font-size: 13px;
-    margin: 10px 0;
-}
 
-li {
-    padding: 3px;
-    font-size: 12px;
-    color: #687980;
-}
 
-a {
-    color: #687980;
-}
 
-li:hover {
-    color: #cecece;
-    text-decoration: underline;
-}
+
+
 
 #footBottom {
     height: 70px;
     background-color: #303030;
-}
 
-.foot-bottom-container {
-    width: 70%;
-    margin: 0 auto;
-    height: 100%;
-    max-width: 1170px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+    .foot-bottom-container {
+        width: 70%;
+        margin: 0 auto;
+        height: 100%;
+        max-width: 1170px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-button {
-    color: #ffffff;
-    background-color: inherit;
-    border: solid 1px #0c7cec;
-    padding: 10px;
-    cursor: pointer;
-}
+        button {
+            color: #ffffff;
+            background-color: inherit;
+            border: solid 1px #0c7cec;
+            padding: 10px;
+            cursor: pointer;
+        }
 
-button:hover {
-    border: solid 2px #0c7cec;
-    color: #cecece;
+        button:hover {
+            border: solid 2px #0c7cec;
+            color: #cecece;
 
-}
+        }
 
-.socialMedia {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-span a {
-    color:#0c7cec ;
-}
-span a:hover {
-    font-size: 1.1em;
-    font-weight: 700;
-}
+        .socialMedia {
+            display: flex;
+            gap: 10px;
+            align-items: center;
 
-.foot-bottom-list {
-   
-    display: flex;
-    gap: 10px;
-    color: #787878;
-}
+            .foot-bottom-list {
 
+                display: flex;
+                gap: 10px;
+                color: #787878;
 
+                img {
+                    border-radius: 50%;
+                }
 
-img {
-    border-radius: 50%;
-}
+                img:hover {
+                    background-color: #bbbbbb;
+                }
+            }
 
-img:hover {
-    background-color: #bbbbbb;
+            span a {
+                color: #0c7cec;
+            }
+
+            span a:hover {
+                font-size: 1.1em;
+                font-weight: 700;
+            }
+
+        }
+    }
 }
 </style>

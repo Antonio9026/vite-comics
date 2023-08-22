@@ -2,13 +2,13 @@
 
 export default {
     name: "AppBanner",
-    
+
 }
 
 </script>
 
 <template>
-      <div class="banner_container">
+    <div class="banner_container">
         <div class="card">
             <img src="../assets/img/buy-comics-digital-comics.png" alt="">
             <p>DIGITAL COMICS</p>
@@ -30,24 +30,29 @@ export default {
             <p>DC POWER VISA</p>
         </div>
     </div>
-    
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .banner_container {
     height: 150px;
     display: flex;
     justify-content: center;
     gap: 20px;
-    background-color:#0282f9;
+    background-color: #0282f9;
+
+    .card {
+        display: flex;
+        align-items: center;
+        font-size: 11px;
+        gap: 10px;
+
+        img {
+            height: 50px;
+        }
+    }
 }
-.card{
-    display: flex;
-    align-items: center;
-   font-size: 11px;
-   gap: 10px;
-}
-img{
-    height: 50px;
-}
+
+
+
+
 </style>
