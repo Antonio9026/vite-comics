@@ -2,7 +2,7 @@
 
 export default {
   name: "AppHeader",
-  Data() {
+  data() {
     return {
       links: [
         {
@@ -35,17 +35,47 @@ export default {
 </script>
 
 <template>
-  <div class="header-container">
+  <div class="container">
     <div class="header-logo">
       <a href="#"><img src="../assets/img/dc-logo.png" alt=""></a>
     </div>
     <nav>
       <ul>
-        <li v-for="link in links"><a href="">{{ link.text }}</a></li>
+        <li 
+        v-for="link in links">
+          <a href="">{{ link.text }}</a>
+        </li>
       </ul>
     </nav>
 
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.container{
+  justify-content: space-between;
+}
+.header-logo{
+  height: 75px;
+  padding: 15px 0;
+}
+a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: black;
+}
+ul{
+  display: flex;
+  height: 100%;
+  gap: 20px;
+}
+a{
+height: 75px;
+}
+li{
+  font-size: 10px;
+  font-weight: 700;
+}
+</style>
