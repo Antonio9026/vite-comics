@@ -1,19 +1,14 @@
 <script >
 
-export default{
-    name:"AppFooter",
-    Data(){
-
-    },
-    methods:{
-
-    },
+export default {
+    name: "AppFooter",
+   
 }
 
 </script>
 
 <template>
-
+    
 </template>
 
 <style scoped>

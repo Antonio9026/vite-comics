@@ -56,7 +56,7 @@ export default {
   justify-content: space-between;
 }
 .header-logo{
-  height: 75px;
+  height: 100px;
   padding: 15px 0;
 }
 a{
@@ -69,7 +69,8 @@ a{
 ul{
   display: flex;
   height: 100%;
-  gap: 20px;
+  gap: 10px;
+  margin-right: 30px;
 }
 a{
 height: 75px;
