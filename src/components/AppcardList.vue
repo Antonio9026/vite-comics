@@ -41,5 +41,6 @@ img {
 .series{
     max-width: 140px;
     color: white;
+    font-size: 10px;
 }
 </style>

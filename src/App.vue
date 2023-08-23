@@ -40,43 +40,55 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
 main {
   background-color: #1c1c1c;
   position: relative;
+
+  .current-btn {
+    width: 210px;
+    height: 30px;
+    position: absolute;
+    top: -15px;
+    left: 190px;
+    border-radius: 0;
+    background-color: #0282f9;
+    border: 0;
+    color: white;
+    font-size: large;
+  }
+
+  .card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 20px;
+    justify-content: center;
+
+    .load-button {
+      width: 140px;
+      height: 20px;
+      margin: 20px 0;
+      border-radius: 0;
+      background-color: #0282f9;
+      border: 0;
+      color: white;
+      font-size: small;
+    }
+  }
 }
 
-.current-btn {
-  width: 210px;
-  height: 30px;
-  position: absolute;
-  top: -15px;
-  left: 190px;
-  border-radius: 0;
-  background-color: #0282f9;
-  border:0;
-  color: white;
-  font-size: large;
-}
 
-.card-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  width: 70%;
-  margin: 0 auto;
-  padding-top: 20px;
-  justify-content: center;
 
-}
-.load-button{
+
+.load-button {
   width: 140px;
   height: 20px;
   margin: 20px 0;
   border-radius: 0;
   background-color: #0282f9;
-  border:0;
+  border: 0;
   color: white;
-  font-size:small;
+  font-size: small;
 }
-
 </style>
