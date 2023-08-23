@@ -42,7 +42,7 @@ export default {
     <nav>
       <ul>
         <li v-for="link in links">
-          <a href="">{{ link.text }}</a>
+          <a href="#" :class="{active: link.text === 'COMICS'}">{{ link.text }}</a>
         </li>
       </ul>
     </nav>
@@ -82,6 +82,12 @@ export default {
         justify-content: center;
         height: 100%;
         color:$color-nav-link;
+      }
+      .active{
+        color:#0282f9;
+        border-bottom: 5px solid;
+        border-color:#0282f9;
+        height: 100px;
       }
 
     }
