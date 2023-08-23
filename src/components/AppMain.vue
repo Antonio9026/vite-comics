@@ -1,14 +1,21 @@
 <script >
-
+import cardsList from "../db/comics"
+import AppcardList from "./AppcardList.vue";
 export default {
     name: "AppMain",
-
-}
+ 
+ },
+};
 
 </script>
 
 <template>
-    <div class="main-section"><a href="http://">content goes here</a></div>
+    <div class="main-section"><a href="http://">content goes here</a>
+     
+        
+      
+    </div>
+   
 </template>
 
 <style lang="scss" scoped>
