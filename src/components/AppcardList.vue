@@ -16,7 +16,7 @@ export default {
             <img :src="thumb" alt="">
         </div>
         <div class="series">
-            {{ series }}
+            {{ series.toUpperCase() }}
         </div>
     </div>
 </template>
