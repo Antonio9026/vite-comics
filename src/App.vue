@@ -2,7 +2,7 @@
 import cardsList from "./db/comics"
 import AppHeader from './components/AppHeader.vue';
 import AppcardList from './components/AppcardList.vue';
-import AppBanner from './components/Appbanner.vue';
+import AppBanner from './components/AppBanner.vue';
 import AppFooter from './components/AppFooter.vue';
 import AppHero from './components/AppHero.vue';
 
@@ -30,7 +30,7 @@ export default {
     <button class="current-btn"><strong>CURRENT SERIES</strong></button>
     <div class="card-wrapper">
       <AppcardList :thumb="card.thumb" :series="card.series" v-for="card in cardsList"></AppcardList>
-      <button class="load-button">LOAD MORE</button>
+      <button class="load-button"><strong>LOAD MORE</strong></button>
     </div>
 
   </main>
@@ -81,14 +81,5 @@ main {
 
 
 
-.load-button {
-  width: 140px;
-  height: 20px;
-  margin: 20px 0;
-  border-radius: 0;
-  background-color: #0282f9;
-  border: 0;
-  color: white;
-  font-size: small;
-}
+
 </style>

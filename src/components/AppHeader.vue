@@ -84,9 +84,9 @@ export default {
         color:$color-nav-link;
       }
       .active{
-        color:#0282f9;
+        color:$color-primary;
         border-bottom: 5px solid;
-        border-color:#0282f9;
+        border-color:$color-primary;
         height: 100px;
       }
 

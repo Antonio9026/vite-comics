@@ -16,31 +16,30 @@ export default {
             <img :src="thumb" alt="">
         </div>
         <div class="series">
-            {{ series.toUpperCase() }}
+            <strong> {{ series.toUpperCase() }}</strong>
         </div>
     </div>
 </template>
 
 
 <style lang="scss" scoped>
-.card{
-   width: calc(100% / 6);
+.card {
+    width: calc(100% / 6);
     margin: 10px 0;
+    .img-container {
+        width: 140px;
+        height: 140px;
+        margin: 10px 0;
 
-}
-.img-container {
-    width: 140px;
-    height: 140px;
-   margin: 10px 0;
-   
-}
+        img {
+            width: 100%;
+        }
+    }
 
-img {
-    width: 100%;
-}
-.series{
-    max-width: 140px;
-    color: white;
-    font-size: 10px;
+    .series {
+        max-width: 140px;
+        color: white;
+        font-size: 11px;
+    }
 }
 </style>
